@@ -53,10 +53,10 @@
                 <RowDefinition Height="1*"/>
             </Grid.RowDefinitions>
             <Border Grid.Column="0" Grid.Row="0" Name="btn00">
-                <TextBlock>0</TextBlock>
+                <TextBlock Text="{Binding GridValues[0][0], RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:MainWindow}}}">?</TextBlock>
             </Border>
             <Border Grid.Column="1" Grid.Row="0" Name="btn01">
-                <TextBlock>0</TextBlock>
+                <TextBlock Text="{Binding Path=GridValues[0][1], Mode=OneWay}">0</TextBlock>
             </Border>
             <Border Grid.Column="2" Grid.Row="0" Name="btn02">
                 <TextBlock>0</TextBlock>
